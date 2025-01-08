@@ -28,10 +28,12 @@ body{
 }
 
 .section-1 .text-container p {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #333;
+    color: #000;
     text-align: justify; 
 }
 
@@ -68,29 +70,32 @@ body{
     margin-bottom: -23px;
 }
 
-
+/* Style for section-2 */
 .section-2 {
-    margin: 5px 120px; 
+    margin: 5px 100px; 
     text-align: center; 
     padding: 30px 20px;
-    color: #333;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.section-2 h1 {
-    font-size: 2.5rem;
+.section-2 .head-p {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 40px;
     margin-bottom: 20px;
-    color: #333;
 }
 
-.section-2 p {
-    font-size: 1.2rem;
+.section-2 .body-p {
+    font-size: 1.125rem;
+    font-weight: 300 !important;
     line-height: 1.6;
     margin: 10px auto;
     max-width: 1200px; 
 }
 
 
-/* Section container styles */
+/* Section-3,6 container styles */
 .section-3, .section-4, .section-5, .section-6 {
     display: flex;
     align-items: stretch; 
@@ -100,7 +105,6 @@ body{
     gap: 0;
 }
 
-/* Text container styles */
 .section-3 .text-container,
 .section-4 .text-container,
 .section-5 .text-container,
@@ -114,7 +118,6 @@ body{
     justify-content: center; 
 }
 
-/* Image container styles */
 .section-3 .image-container,
 .section-4 .image-container,
 .section-5 .image-container,
@@ -128,36 +131,37 @@ body{
     margin: 0;
 }
 
-/* Swap image and text positions for alternate sections */
 .section-4 .image-container, 
 .section-6 .image-container {
     order: 1;
 }
 
-/* Text styles */
-.section-3 h1, 
-.section-4 h1, 
-.section-5 h1, 
-.section-6 h1 {
+.section-3 .head-p, 
+.section-4 .head-p, 
+.section-5 .head-p, 
+.section-6 .head-p {
     font-size: 2rem;
-    font-weight: normal;
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 40px;
     margin-bottom: 15px;
     margin-left: 60px;
     margin-right: 60px;
-    color: #333;
+    color: #000;
 }
 
-.section-3 p, 
-.section-4 p, 
-.section-5 p, 
-.section-6 p {
-    font-size: 1.1rem;
+.section-3 .body-p, 
+.section-4 .body-p, 
+.section-5 .body-p, 
+.section-6 .body-p {
+    font-size: 1.125rem;
+    font-weight: 300 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #555;
+    color: #000;
     margin: 10px 60px;
 }
 
-/* Image styles */
 .section-3 img, 
 .section-4 img, 
 .section-5 img, 
@@ -168,7 +172,7 @@ body{
     display: block;
 }
 
-/* Section container styles */
+/* Section-7 container styles */
 .section-7 {
     display: flex;
     justify-content: space-between;
@@ -177,7 +181,6 @@ body{
     gap: 20px;
 }
 
-/* Left-side text container */
 .section-7 .text-signin-container {
     flex: 1;
     display: flex;
@@ -187,16 +190,19 @@ body{
     margin-left: 50px; 
 }
 
-.section-7 .text-signin-container h1 {
-    font-size: 2rem;
+.section-7 .text-signin-container .head-p {
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
     margin-bottom: 15px;
-    color: #333;
-    font-weight: normal;
+    color: #050505;
 }
 
-.section-7 .text-signin-container p {
-    font-size: 1rem;
-    color: #2e2d2d;
+.section-7 .text-signin-container .body-p {
+    font-size: 1.125rem;
+    font-weight: 300 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
     margin-bottom: 10px;
 }
 
@@ -206,8 +212,6 @@ body{
     font-weight: normal;
 }
 
-
-/* Right-side email container */
 .section-7 .email-container {
     flex: 1; 
     display: flex;
@@ -240,7 +244,8 @@ body{
     border: none; 
     border-radius: 5px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .section-7 .email-container a:hover {
@@ -248,121 +253,3 @@ body{
     color: white; 
 }
 
-
-
-/* For devices with a width up to 768px (Tablet Portrait and Mobile) */
-@media (max-width: 768px) {
-
-    .section-1,
-    .section-3,
-    .section-4,
-    .section-5,
-    .section-6,
-    .section-7 {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .section-1 .tex-signup-content,
-    .section-1 .image-container {
-        max-width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .section-1 .text-container p {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    .section-1 .signup-container a {
-        font-size: 1rem;
-    }
-
-    .section-2 h1 {
-        font-size: 2rem;
-    }
-
-    .section-2 p {
-        font-size: 1rem;
-        padding: 0 20px;
-    }
-
-    .section-3 h1,
-    .section-4 h1,
-    .section-5 h1,
-    .section-6 h1 {
-        font-size: 1.6rem;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .section-3 p,
-    .section-4 p,
-    .section-5 p,
-    .section-6 p {
-        font-size: 1rem;
-        margin: 10px 20px;
-    }
-
-    .section-7 {
-        flex-direction: column;
-        gap: 20px;
-        padding: 30px 20px;
-    }
-
-    .section-7 .email-container {
-        justify-content: center;
-        text-align: center;
-    }
-
-    .section-7 .email-container input,
-    .section-7 .email-container a {
-        width: 100%;
-    }
-}
-
-/* For devices with a width up to 480px (Mobile) */
-@media (max-width: 480px) {
-
-    .section-1 .text-container p {
-        font-size: 1.2rem;
-    }
-
-    .section-1 .signup-container a {
-        font-size: 0.9rem;
-        padding: 12px 25px;
-    }
-
-    .section-2 h1 {
-        font-size: 1.8rem;
-    }
-
-    .section-2 p {
-        font-size: 0.9rem;
-        padding: 0 15px;
-    }
-
-    .section-3 h1,
-    .section-4 h1,
-    .section-5 h1,
-    .section-6 h1 {
-        font-size: 1.4rem;
-    }
-
-    .section-3 p,
-    .section-4 p,
-    .section-5 p,
-    .section-6 p {
-        font-size: 0.9rem;
-    }
-
-    .section-7 .text-signin-container h1 {
-        font-size: 1.6rem;
-    }
-
-    .section-7 .email-container input,
-    .section-7 .email-container a {
-        font-size: 0.9rem;
-    }
-}

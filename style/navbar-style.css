@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Navbar Container */
 nav {
     position: fixed; 
     top: 0; 
@@ -14,7 +13,6 @@ nav {
     background-color: #0a0a0a;
 }
 
-/* Navbar List */
 nav ul {
     padding: 5px 0;
     margin: 0;
@@ -25,7 +23,6 @@ nav ul {
     list-style: none; 
 }
 
-/* Logo */
 nav ul li img {
     height: 20px;
     width: auto;
@@ -33,7 +30,6 @@ nav ul li img {
     margin-left: 60px;
 }
 
-/* Navbar Items */
 nav ul li {
     display: inline-block;
     position: relative;
@@ -41,20 +37,19 @@ nav ul li {
     margin: 0 10px;
 }
 
-/* Navbar Links */
 nav ul li a {
     color: white;
     padding: 10px 10px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav ul li a:hover {
     color: #e2e7e7eb;
 }
 
-/* Dropdown Button */
 nav .dropdown-btn {
     color: white;
     padding: 10px 10px;
@@ -62,7 +57,6 @@ nav .dropdown-btn {
     display: inline-block;
 }
 
-/* Dropdown Menu */
 nav ul li ul {
     display: none;
     position: absolute;
@@ -76,7 +70,6 @@ nav ul li ul {
     z-index: 1000; 
 }
 
-/* Dropdown Items */
 nav ul li ul li {
     display: flex;
     justify-content: flex-start;
@@ -85,14 +78,12 @@ nav ul li ul li {
     margin: 0 0;
 }
 
-/* Dropdown Logos */
 nav ul li ul li img {
     height: 25px;
     width: auto;
     margin-left: 2px;
 }
 
-/* Dropdown Links */
 nav ul li ul li a {
     text-decoration: none;
     padding: 0;
@@ -103,7 +94,6 @@ nav ul li ul li a {
     flex-grow: 1;
 }
 
-/* Right Items Container */
 nav .right-items {
     display: flex;
     margin-left: auto;
@@ -111,7 +101,6 @@ nav .right-items {
     gap: 20px;
 }
 
-/* Show Dropdown on Hover */
 nav ul li:hover > ul {
     display: block;
 }
@@ -128,7 +117,6 @@ nav ul li ul li:hover a {
     color: black;
 }
 
-/* Customers Dropdown Menu */
 nav .dropdown-1 > ul {
     display: none;
     position: absolute;
@@ -141,7 +129,6 @@ nav .dropdown-1 > ul {
     height: auto;
 }
 
-/* Customers Dropdown Items */
 nav .dropdown-1 ul li {
     display: flex;
     justify-content: flex-start;
@@ -150,17 +137,14 @@ nav .dropdown-1 ul li {
     margin: 0;
 }
 
-/* Customers Hover Effects */
 nav .dropdown-1 ul li:hover a {
     color: black;
 }
 
-/* Show Customers Dropdown */
 nav .dropdown-1:hover > ul {
     display: block;
 }
 
-/* "Get Started" Dropdown */
 nav .dropdown-get-started ul {
     display: none;
     position: absolute;
@@ -171,7 +155,6 @@ nav .dropdown-get-started ul {
     z-index: 1000;
 }
 
-/* "Get Started" Dropdown Items */
 nav .dropdown-get-started ul li {
     display: flex;
     justify-content: flex-start;
@@ -190,7 +173,6 @@ nav .dropdown-get-started ul li a {
     flex-grow: 1;
 }
 
-/* Hover Effects */
 nav .dropdown-get-started ul li:hover {
     background-color: #eff4f5;
 }
@@ -199,12 +181,10 @@ nav .dropdown-get-started ul li a:hover {
     color: black;
 }
 
-/* Show "Get Started" dropdown when hovering */
 nav .dropdown-get-started:hover > ul {
     display: block;
 }
 
-/* "Get Started" Button */
 nav .dropdown-get-started .aa {
     background-color: white;
     color: #0a0a0a;
@@ -216,97 +196,3 @@ nav .dropdown-get-started .aa:hover {
     background-color: #f0f0f0;
     color: black;
 }
-
-
-
-
-/* Mobile and Tablet Responsiveness */
-@media screen and (max-width: 768px) {
-    /* Navbar Items for mobile */
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
-
-    /* Logo adjustments */
-    nav ul li img {
-        margin-left: 30px;
-        margin-right: 0;
-        height: 40px; 
-    }
-
-    /* Right Items */
-    nav .right-items {
-        flex-direction: column;
-        margin: 0;
-        gap: 15px;
-    }
-
-    /* Navbar Links (Mobile Style) */
-    nav ul li {
-        width: 100%;
-        text-align: left;
-        padding: 10px 20px;
-    }
-
-    /* Dropdown Menus on Mobile */
-    nav ul li ul {
-        position: static;
-        width: 100%;
-        background-color: #f0f0f0;
-        padding: 0;
-    }
-
-    /* Show Dropdown on Click (instead of hover) */
-    nav ul li:hover > ul,
-    nav .dropdown-1:hover > ul,
-    nav .dropdown-get-started:hover > ul {
-        display: block;
-    }
-
-    /* Dropdown Button */
-    nav .dropdown-btn,
-    nav .dropdown-1 .dropdown-btn,
-    nav .dropdown-get-started .dropdown-btn {
-        font-size: 16px;
-        padding: 12px;
-        width: 100%;
-        text-align: left;
-        background-color: #0a0a0a;
-        color: white;
-        border: none;
-    }
-
-    /* "Get Started" Button */
-    nav .dropdown-get-started .aa {
-        width: 100%;
-    }
-
-    /* Mobile-specific Hover Effects */
-    nav ul li ul li:hover {
-        background-color: #eff4f5;
-    }
-
-    nav ul li ul li:hover a {
-        color: black;
-    }
-}
-
-/* Mobile View for Small Devices */
-@media screen and (max-width: 480px) {
-    nav ul li img {
-        height: 30px;
-    }
-
-    /* Adjust padding */
-    nav ul li a {
-        font-size: 14px;
-        padding: 10px 15px;
-    }
-
-    nav .right-items {
-        margin-right: 20px;
-    }
-}
-

@@ -38,22 +38,22 @@ body{
     max-width: 35%; 
     color: white;
     margin-left: 7%;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-.section-1 .home-pos-bus {
-    font-size: 2.5rem;
+.section-1 .content .home-pos-bus {
+    font-size: 2.6rem;
     line-height: 50px;
     margin-bottom: 15px;
     font-weight: 300;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
 }
 
-.section-1 p {
-    font-size: 1.2rem;
+.section-1 .content .sec-1-para{
+    font-size: 1.125rem;
     margin-bottom: 20px;
     line-height: 1.5;
-    font-weight: normal;
+    font-weight: 300 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .section-1 .rectangle-container {
@@ -65,15 +65,14 @@ body{
 }
 
 .section-1 .rectangle-container .rectangle {
-    width: 150px; 
-    height: 50px; 
+    width: 140px; 
+    height: 45px; 
     text-align: center;
     background-color: transparent;
     border-radius: 5px;
     border: 1px solid white;
     color: white;
     font-size: 1rem;
-    font-weight: normal;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,7 +82,8 @@ body{
 .section-1 .rectangle-container .rectangle a {
     text-decoration: none; 
     color:white; 
-    font-weight: bold;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .section-1 .rectangle-container .rectangle:nth-child(1):hover {
@@ -113,20 +113,25 @@ body{
     text-align: center; 
     padding: 50px 20px;
     background-color: #f8f8f8;
-    color: #333;
 }
 
-.section-2 h1 {
-    font-size: 2.5rem;
+.section-2 .head-p {
+    font-size: 2rem;
     margin-bottom: 20px;
-    color: #333;
+    color: #000;
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 40px;
 }
 
-.section-2 p {
-    font-size: 1.2rem;
+.section-2 .body-p {
+    font-size: 1.125rem;
+    font-weight: 300 !important;
     line-height: 1.6;
     margin: 20px auto;
     max-width: 1300px; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
 }
 
 .section-2 .section-2-pic {
@@ -184,26 +189,30 @@ body{
     order: 1;
 }
 
-.section-3 h1, 
-.section-4 h1, 
-.section-5 h1, 
-.section-6 h1 {
+.section-3 .head-p, 
+.section-4 .head-p, 
+.section-5 .head-p, 
+.section-6 .head-p {
     font-size: 2rem;
-    font-weight: normal;
+    font-weight: 300;
     margin-bottom: 15px;
     margin-left: 60px;
     margin-right: 60px;
     color: black;
+    line-height: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.section-3 p, 
-.section-4 p, 
-.section-5 p, 
-.section-6 p {
-    font-size: 1.1rem;
+.section-3 .body-p, 
+.section-4 .body-p, 
+.section-5 .body-p, 
+.section-6 .body-p{
+    font-size: 1.125rem;
     line-height: 1.6;
     color: black;
     margin: 10px 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300 !important;
 }
 
 .section-3 img, 
@@ -234,17 +243,21 @@ body{
     gap: 20px; 
 }
 
-.section-7 h1 {
+.section-7 .head-p {
     font-size: 2rem;
-    font-weight: normal; 
+    font-weight: 300; 
     color: black;
+    line-height: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.section-7 p {
-    font-size: 1.1rem;
+.section-7 .body-p {
+    font-size: 1.125rem;
     line-height: 1.6;
     color: black;
     margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300 !important;
 }
 
 .section-7 img {
@@ -260,32 +273,36 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: cadetblue;
+    background-color: rgb(67, 100, 102);
     flex-direction: column; 
   }
   
   .section-8 .content-container {
-    margin: 50px 150px;
+    margin: 70px 100px;
     text-align: center;
-    max-width: 1250px;
+    max-width: 1300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
   }
   
-  .section-8 h1 {
+  .section-8 .head-p {
     font-size: 2rem;
-    font-weight: normal;
+    font-weight: 300;
     color: white;
     margin-bottom: 20px;
+    line-height: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
-  .section-8 p {
-    font-size: 1.2rem;
+  .section-8 .body-p {
+    font-size: 1.3rem;
     line-height: 1.6;
+    font-weight: 300 !important;
     color: white;
     margin-bottom: 40px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
   .section-9 {
@@ -310,14 +327,20 @@ body{
     width: 100%;
 }
 
-.section-9 h2 {
+.section-9 .head-p {
     margin-bottom: 30px;
     color: black; 
+    font-size: 2rem;
+    line-height: 40px;
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.section-9 p {
+.section-9 .body-p {
     color: black; 
-    font-size: 18px;
+    font-size: 1.125rem;
+    font-weight: 300 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
   
 /* General section styling */
@@ -337,15 +360,19 @@ body{
     margin: 0 auto; 
 }
 
-.section-10 h1 {
+.section-10 .head-p {
     font-size: 2rem;
-    font-weight: normal;
-    color: #333;
+    font-weight: 300;
+    line-height: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
 }
 
-.section-10 p {
-    font-size: 1.1rem;
+.section-10 .body-p {
+    font-size: 1.125rem;
     line-height: 1.6;
+    font-weight: 300 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
     max-width: 1200px; 
     text-align: center; 
@@ -361,13 +388,33 @@ body{
     margin: 0 auto; 
 }
 
+.section-10 .boxes-container .box-cont-h{
+    font-size: 1.6rem;
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section-10 .boxes-container .box-cont-b{
+    font-size: 1.125rem;
+    font-weight: 300 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+}
+.section-10 .boxes-container .box-cont-t{
+    font-size: 1.4rem;
+    font-weight: 400 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+}
+
+
 .section-10 .box {
     flex: 1 1 calc(25% - 20px); 
     text-align: center;
     padding: 40px;  
-    border-radius: 8px;
-    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: white;
+    box-shadow: #f2f2f2;
     max-width: 350px;  
     min-height: 350px; 
 }
@@ -389,37 +436,33 @@ body{
 .section-10 .box a {
     margin-top: 20px;
     display: inline-block;
-    padding: 12px 25px;
+    padding: 10px 30px;
     color: white;
-    background-color: #2ecc71; 
-    border: 2px solid #2ecc71;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    text-transform: uppercase;
     border-radius: 5px;
     text-decoration: none;
+    font-weight: 400;
 }
 
 .section-10 .box-1 a {
-    background-color: white;
-    border-color: seagreen;
+    border: 1px solid #2ecc71;
     color: seagreen;
 }
 
 .section-10 .box-2 a {
-    background-color: white;
-    border-color:#1261a2;
+    border: 1px solid #1261a2;
     color: #1261a2;
 }
 
 .section-10 .box-3 a {
-    background-color: white;
-    border-color: #6d1a7d;
+    border: 1px solid #6d1a7d;
     color: #6d1a7d;
 }
 
 .section-10 .box-4 a {
-    background-color: white;
-    border-color:#677404;
+    border:1px solid #677404;
     color: #677404;
 }
 
@@ -466,14 +509,19 @@ body{
     text-align: center;
   }
   
-  .section-11 .text-container h1 {
+  .section-11 .text-container .head-p,
+  .section-11 .image-container .head-p {
     font-size: 2rem;
-    font-weight: normal;
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 40px;
     margin-bottom: 20px;
   }
   
-  .section-11 .text-container p {
-    font-size: 1.1rem;
+  .section-11 .text-container .body-p{
+    font-size: 1.125rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300 !important;
     color: black;
     margin: 0;
   }
@@ -485,14 +533,6 @@ body{
     justify-content: center;
     align-items: center;
     gap: 20px; 
-  }
-  
-  .section-11 .image-container h1 {
-    margin-top: 30px;
-    font-size: 2rem;
-    font-weight: normal;
-    text-align: center;
-    width: 100%;
   }
   
   .section-11 .image-container div {
@@ -534,17 +574,21 @@ body{
     gap: 30px;
 }
 
-.section-12 h1 {
+.section-12 .head-p {
     font-size: 2rem;
-    font-weight: normal;
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 40px;
     color: black;
 }
 
-.section-12 p {
-    font-size: 1.1rem;
+.section-12 .body-p {
+    font-size: 1.125rem;
     line-height: 1.6;
+    font-weight: 300 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
-    max-width: 800px;
+    max-width: 900px;
 }
 
 .section-12 .boxes-container {
@@ -584,7 +628,7 @@ body{
 .section-12 .box-1 p,
 .section-12 .box-3 h2,
 .section-12 .box-3 p {
-    color: white;
+    color: rgb(228, 225, 225);
 }
 
 .section-12 .box-2 h2,
@@ -607,13 +651,16 @@ body{
     object-fit: contain; 
 }
 
-.section-12 h2 {
-    font-size: 1.5rem;
+.section-12 .box-cont-h {
+    font-size: 1.3rem;
+    font-weight: 400 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 20px;
 }
 
-.section-12 p {
-    font-size: 1.1rem;
+.section-12 .box-cont-p {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
 }
 
