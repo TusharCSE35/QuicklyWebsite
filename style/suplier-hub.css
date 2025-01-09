@@ -8,6 +8,7 @@ body{
     padding-top: 72px;
 }
 
+/* Section-1 styling */
 .section-1 {
     display: flex;
     justify-content: space-between;
@@ -70,7 +71,7 @@ body{
     margin-bottom: -23px;
 }
 
-/* Style for section-2 */
+/* Section-2 styling */
 .section-2 {
     margin: 5px 100px; 
     text-align: center; 
@@ -95,7 +96,7 @@ body{
 }
 
 
-/* Section-3,6 container styles */
+/* Section-3,4,5,6 styling */
 .section-3, .section-4, .section-5, .section-6 {
     display: flex;
     align-items: stretch; 
@@ -172,7 +173,7 @@ body{
     display: block;
 }
 
-/* Section-7 container styles */
+/* Section-7 styling */
 .section-7 {
     display: flex;
     justify-content: space-between;
