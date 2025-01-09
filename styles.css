@@ -87,23 +87,27 @@ body{
 }
 
 .section-1 .rectangle-container .rectangle:nth-child(1):hover {
+    border: none;
     background-color: #1b775e; 
     color: white;
 }
 
 .section-1 .rectangle-container .rectangle:nth-child(2):hover {
     background-color: #1261a2; 
+    border: none;
     color: white;
 }
 
 .section-1 .rectangle-container .rectangle:nth-child(3):hover {
     background-color: #6d1a7d;
+    border: none;
     color: white;
 }
 
 .section-1 .rectangle-container .rectangle:nth-child(4):hover {
     background-color: #545e05; 
     color: white;
+    border: none;
 }
 
 
