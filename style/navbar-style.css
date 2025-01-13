@@ -1,3 +1,4 @@
+/* Basic reset */
 * {
     padding: 0;
     margin: 0;
@@ -5,10 +6,10 @@
 }
 
 nav {
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
-    z-index: 1000; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     background-color: #0a0a0a;
 }
 
@@ -17,9 +18,9 @@ nav ul {
     margin: 0;
     display: flex;
     align-items: center;
-    height: 72px; 
+    height: 72px;
     justify-content: space-between;
-    list-style: none; 
+    list-style: none;
 }
 
 nav ul li img {
@@ -33,7 +34,7 @@ nav ul li {
     display: inline-block;
     position: relative;
     color: white;
-    margin: 0 10px;
+    margin: 0 7px;
 }
 
 nav ul li a {
@@ -48,14 +49,38 @@ nav ul li a {
 nav ul li a:hover {
     color: #e2e7e7eb;
 }
+nav ul li ul li:hover {
+    background-color: #eff4f5;
+}
 
-nav .dropdown-btn {
+nav ul li ul li:hover img {
+    filter: brightness(1.2);
+}
+
+nav ul li ul li:hover a {
+    color: black;
+}
+
+/* Dropdown buttons */
+nav .dropdown-btn,
+nav .dropdown-1,
+nav .aa {
     color: white;
     padding: 10px 10px;
     text-decoration: none;
     display: inline-block;
+    cursor: pointer;
 }
 
+nav .dropdown-btn:hover{
+    color: #e6eaea;
+}
+
+nav .dropdown-checkbox {
+    display: none;
+}
+
+/* Dropdown menus */
 nav ul li ul {
     display: none;
     position: absolute;
@@ -66,7 +91,7 @@ nav ul li ul {
     width: 180px;
     padding: 10px 0;
     height: auto;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 nav ul li ul li {
@@ -88,69 +113,45 @@ nav ul li ul li a {
     padding: 0;
     color: rgb(105, 103, 103);
     font-size: 14px;
-    line-height: 1;
+    line-height: 1.8;
     margin: 0;
     flex-grow: 1;
 }
 
+/* Arrow rotation */
+nav .dropdown-btn:after {
+    content: ' ⮟';
+    transition: transform 0.3s ease;
+}
+
+nav .dropdown-checkbox:checked + ul {
+    display: block;
+}
+
+nav .dropdown-checkbox:checked + ul li a {
+    color: black;
+}
+
+nav .dropdown-checkbox:checked + ul ~ .dropdown-btn:after {
+    transform: rotate(180deg);
+}
+
+
 nav .right-items {
     display: flex;
     margin-left: auto;
-    margin-right: 60px;
-    gap: 20px;
+    gap: 8px;
+    align-items: center; 
 }
 
-nav ul li:hover > ul {
-    display: block;
-}
-
-nav ul li ul li:hover {
-    background-color: #eff4f5;
-}
-
-nav ul li ul li:hover img {
-    filter: brightness(1.2);
-}
-
-nav ul li ul li:hover a {
-    color: black;
-}
-
-nav .dropdown-1 > ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    color: black;
-    width: 180px;
-    padding: 10px 0;
-    height: auto;
-}
-
-nav .dropdown-1 ul li {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 10px 15px;
-    margin: 0;
-}
-
-nav .dropdown-1 ul li:hover a {
-    color: black;
-}
-
-nav .dropdown-1:hover > ul {
-    display: block;
-}
 
 nav .dropdown-get-started ul {
     display: none;
     position: absolute;
     top: 100%;
-    right: 0; 
+    right: 0;
     background-color: white;
-    width: 180px;
+    width: 150px;
     z-index: 1000;
 }
 
@@ -167,21 +168,9 @@ nav .dropdown-get-started ul li a {
     padding: 0;
     color: rgb(63, 51, 51);
     font-size: 14px;
-    line-height: 1;
+    line-height: 1.8;
     margin: 0;
     flex-grow: 1;
-}
-
-nav .dropdown-get-started ul li:hover {
-    background-color: #eff4f5;
-}
-
-nav .dropdown-get-started ul li a:hover {
-    color: black;
-}
-
-nav .dropdown-get-started:hover > ul {
-    display: block;
 }
 
 nav .dropdown-get-started .aa {
@@ -191,7 +180,20 @@ nav .dropdown-get-started .aa {
     padding: 8px 15px;
 }
 
-nav .dropdown-get-started .aa:hover {
-    background-color: #f0f0f0;
+nav .dropdown-get-started ul li a:hover {
     color: black;
 }
+nav .dropdown-get-started {
+    margin-right: 80px;     
+}
+
+nav .dropdown-checkbox:checked + ul,
+nav .dropdown-1 .dropdown-checkbox:checked + ul,
+nav .dropdown-get-started .dropdown-checkbox:checked + ul {
+    display: block;
+}
+nav .dropdown-get-started .dropdown-checkbox:checked + ul {
+    display: block;
+    width: 150px;
+}
+

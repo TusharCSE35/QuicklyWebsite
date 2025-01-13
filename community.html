@@ -12,12 +12,13 @@
 </head>
 <body>
     <!-- Navbar -->
-    
     <nav>
         <ul>
             <li><a href="index.html"><img src="images/quickly-logo.png" alt="Quickly Logo"></a></li>
+    
             <li class="dropdown">
-                <a href="#" class="dropdown-btn">Products &#9662;</a>
+                <label for="dropdown-products" class="dropdown-btn">Products</label>
+                <input type="checkbox" id="dropdown-products" class="dropdown-checkbox">
                 <ul class="dropdown-menu">
                     <li>
                         <img src="images/restrogreen.png" alt="">
@@ -41,9 +42,11 @@
             <li><a href="https://shop.quicklyservices.com/QuicklyShop" target="_blank">Shop</a></li>
             <li><a href="community.html">Community</a></li>
             <li><a href="https://support.quicklyservices.com/" target="_blank">Support</a></li>
+    
             <div class="right-items">
                 <li class="dropdown-1">
-                    <a href="#" class="dropdown-btn">Customers &#9662;</a>
+                    <label for="dropdown-customers" class="dropdown-btn">Customers</label>
+                    <input type="checkbox" id="dropdown-customers" class="dropdown-checkbox">
                     <ul class="dropdown-menu-1">
                         <li><a href="https://restrogreen.quicklyservices.com/account/login" target="_blank">RestroGreen Login</a></li>
                         <li><a href="https://retailgo.quicklyservices.com/account/login" target="_blank">RetailGo Login</a></li>
@@ -52,8 +55,10 @@
                         <li><a href="https://support.quicklyservices.com/login/rom" target="_blank">Create a Support Ticket</a></li>
                     </ul>
                 </li>
+    
                 <li class="dropdown-get-started">
-                    <a href="#" class="dropdown-btn aa">Get Started</a>
+                    <label for="dropdown-get-started" class="dropdown-btn-right aa">Get Started</label>
+                    <input type="checkbox" id="dropdown-get-started" class="dropdown-checkbox">
                     <ul class="dropdown-menu-get-started">
                         <li><a href="https://restrogreen.quicklyservices.com/account/signup" target="_blank">RestroGreen</a></li>
                         <li><a href="https://retailgo.quicklyservices.com/account/signup" target="_blank">RetailGo</a></li>
@@ -64,7 +69,6 @@
             </div>
         </ul>
     </nav>
-    
 
     <!-- Content Section -->
     <div class="header">
@@ -94,15 +98,18 @@
             </p>
             <div class="video-link">
                 <a href="https://youtu.be/qEwhq9UHFAg" target="_blank" class="video" style="background-image: url('images/community/section-2-image-1.jpg');">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/1024px-YouTube_icon_%282013-2017%29.png" 
-                         alt="Play Video" class="youtube-icon">
+                    <div class="youtube-icon">
+                        <div class="play-button">&#9654;</div> 
+                    </div>
                 </a>
-                <a href="https://youtu.be/UGtGQCF4SYM" target="_blank"  class="video" style="background-image: url('images/community/section-2-image-2.jpg');">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/1024px-YouTube_icon_%282013-2017%29.png" 
-                         alt="Play Video" class="youtube-icon">
+                <a href="https://youtu.be/UGtGQCF4SYM" target="_blank" class="video" style="background-image: url('images/community/section-2-image-2.jpg');">
+                    <div class="youtube-icon">
+                        <div class="play-button">&#9654;</div> 
+                    </div>
                 </a>
             </div>
         </section>
+        
 
         <div class="section-3">
             <p class="head-p">We always stand by our community</p>
@@ -110,7 +117,7 @@
         </div>
 
         <section class="section-4">
-            <h1 class="head-p">Quickly Webinars</h1>
+            <p class="head-p">Quickly Webinars</p>
             <p class="body-p">Knowledge never goes out of style. Learn how to get started with Quickly from the webinars, live and recorded sessions.</p>
             
             <!-- Box 1 -->
@@ -221,7 +228,7 @@
     
             <div class="box-container">
                 <!-- Box 1 -->
-                <div class="box" style="background-color: #f8f9fa;">
+                <div class="box" style="background-color: #f3fdf3;">
                     <div class="box-top">
                         <div class="box-left">
                             <img src="images/community/cheeseBellyOwner.webp" alt="Profile Pic" class="circle-image">
@@ -238,7 +245,7 @@
                 </div>
     
                 <!-- Box 2 -->
-                <div class="box" style="background-color: #e7f0ff;">
+                <div class="box" style="background-color: #eceef3;">
                     <div class="box-top">
                         <div class="box-left">
                             <img src="images/community/hungersGarageOwner.jpeg" alt="Profile Pic" class="circle-image">
@@ -255,7 +262,7 @@
                 </div>
     
                 <!-- Box 3 -->
-                <div class="box" style="background-color: #fdf1e1;">
+                <div class="box" style="background-color: #f9f5f2;">
                     <div class="box-top">
                         <div class="box-left">
                             <img src="images/community/romromaOwner.webp" alt="Profile Pic" class="circle-image">
@@ -272,7 +279,7 @@
                 </div>
     
                 <!-- Box 4 -->
-                <div class="box" style="background-color: #e6ffe6;">
+                <div class="box" style="background-color: #f8ede1;">
                     <div class="box-top">
                         <div class="box-left">
                             <img src="images/community/central-cafe-owner.webp" alt="Profile Pic" class="circle-image">
@@ -302,6 +309,7 @@
                     <li><a href="https://quicklyservices.com/privacy-policy" target="_blank">Privacy Policy</a></li>
                     <li><a href="https://quicklyservices.com/public/term-conditions#refundPolicies" target="_blank">Refund Policy</a></li>
                     <li><a href="https://quicklyservices.com/public/about-us" target="_blank">About Us</a></li>
+                    <br>
                     <li><a href="https://support.quicklyservices.com/" target="_blank">Help & Support</a></li>
                     <li><a href="https://support.quicklyservices.com/article" target="_blank">Blog</a></li>
                     <li><a href="https://support.quicklyservices.com/login/rom" target="_blank">Create Ticket</a></li>
@@ -313,7 +321,7 @@
                     <li><a href="https://restrogreen.quicklyservices.com/account/signup" target="_blank">Sign Up</a></li>
                     <li><a href="https://quicklyservices.com/restrogreen-pricing-plan">Pricing</a></li>
                     <li><a href="https://play.google.com/store/apps/details?id=com.quicklyservices.restaurants" target="_blank">Android POS</a></li>
-                    <li><a href="/zip-file/RestroGreen_POS_Setup_4.8.0.zip" download="RestroGreen_POS_Setup_4.8.0.zip">Windows POS</a></li>
+                    <li><a href="index.html">Windows POS</a></li>
                     <li><a href="https://play.google.com/store/apps/details?id=com.quicklyservices.restaurants.merchant" target="_blank">Backoffice App (Android)</a></li>
                     <li><a href="https://apps.apple.com/us/app/restrogreen-backoffice/id1549544537" target="_blank">Backoffice App (IOS)</a></li>
                     <li><a href="https://play.google.com/store/apps/details?id=com.quicklyservices.restaurant.quickly_kds" target="_blank">KDS App</a></li>
@@ -328,8 +336,8 @@
                     <li><a href="https://retailgo.quicklyservices.com/account/signup" target="_blank">Sign Up</a></li>
                     <li><a href="https://quicklyservices.com/retailgo-pricing-plan">Pricing</a></li>
                     <li><a href="https://play.google.com/store/apps/details?id=com.quicklyservices.retail" target="_blank">Android POS</a></li>
-                    <li><a href="zip-file/RetailGo_POS_Setup_1.17.0.zip" download="RetailGo_POS_Setup_1.17.0.zip">Windows POS</a></li>
-                    <li><a href="zip-file/RetailGo_POS_Setup_MAC_1.14.0.zip" download="RetailGo_POS_Setup_MAC_1.14.0.zip">Mac POS</a></li>
+                    <li><a href="index.html">Windows POS</a></li>
+                    <li><a href="index.html">Mac POS</a></li>
                     <li><a href="https://play.google.com/store/apps/details?id=com.quicklyservices.retail.merchant&hl=en_US" target="_blank">Backoffice App (Android)</a></li>
                     <li><a href="https://apps.apple.com/us/app/retailgo-backoffice/id6477159032" target="_blank">Backoffice App (IOS)</a></li>
                     <li><a href="https://support.quicklyservices.com/retail-instructions#start-one" target="_blank">Knowledge Base</a></li>
@@ -353,12 +361,11 @@
                 </ul>
             </div>
         </div>
-
+     
         <div class="footer-right">
-            <p>Hal-Mars (4th Floor), 5 Shaheed Sangbadik Salina Parveen Sarak,</p>
-            <p>Moghbazar, Dhaka-1217, Bangladesh</p>
-            <p>Phone: +880 249362894, +880 1309989340</p>
-            <p>Email: info@quicklyservices.com</p>
+            <p class="first">Hal-Mars (4th Floor), 5 Shaheed Sangbadik Salina Parveen Sarak,</p>
+            <p class="first">Moghbazar, Dhaka-1217, Bangladesh</p>
+            <p class="third">+880 249362894, +880 1309989340, info@quicklyservices.com</p>
             
             <div class="social-icons">
                 <a href="https://www.facebook.com/quicklyofficial" class="fab fa-facebook"></a>

@@ -13,12 +13,13 @@
 </head>
 <body>
     <!-- Navbar -->
-    
     <nav>
         <ul>
             <li><a href="index.html"><img src="images/quickly-logo.png" alt="Quickly Logo"></a></li>
+    
             <li class="dropdown">
-                <a href="#" class="dropdown-btn">Products &#9662;</a>
+                <label for="dropdown-products" class="dropdown-btn">Products</label>
+                <input type="checkbox" id="dropdown-products" class="dropdown-checkbox">
                 <ul class="dropdown-menu">
                     <li>
                         <img src="images/restrogreen.png" alt="">
@@ -42,9 +43,11 @@
             <li><a href="https://shop.quicklyservices.com/QuicklyShop" target="_blank">Shop</a></li>
             <li><a href="community.html">Community</a></li>
             <li><a href="https://support.quicklyservices.com/" target="_blank">Support</a></li>
+    
             <div class="right-items">
                 <li class="dropdown-1">
-                    <a href="#" class="dropdown-btn">Customers &#9662;</a>
+                    <label for="dropdown-customers" class="dropdown-btn">Customers</label>
+                    <input type="checkbox" id="dropdown-customers" class="dropdown-checkbox">
                     <ul class="dropdown-menu-1">
                         <li><a href="https://restrogreen.quicklyservices.com/account/login" target="_blank">RestroGreen Login</a></li>
                         <li><a href="https://retailgo.quicklyservices.com/account/login" target="_blank">RetailGo Login</a></li>
@@ -53,8 +56,10 @@
                         <li><a href="https://support.quicklyservices.com/login/rom" target="_blank">Create a Support Ticket</a></li>
                     </ul>
                 </li>
+    
                 <li class="dropdown-get-started">
-                    <a href="#" class="dropdown-btn aa">Get Started</a>
+                    <label for="dropdown-get-started" class="dropdown-btn-right aa">Get Started</label>
+                    <input type="checkbox" id="dropdown-get-started" class="dropdown-checkbox">
                     <ul class="dropdown-menu-get-started">
                         <li><a href="https://restrogreen.quicklyservices.com/account/signup" target="_blank">RestroGreen</a></li>
                         <li><a href="https://retailgo.quicklyservices.com/account/signup" target="_blank">RetailGo</a></li>
@@ -207,20 +212,36 @@
                 </div>
                 <div class="image-container">
                     <p class="head-p">Some of the awesome customers that love Quickly </p>
-                    <div>
-                        <img src="images/purnima.png" alt="">
-                        <img src="images/Fiore.png" alt="">
-                        <img src="images/Fuoco.png" alt="">
-                        <img src="images/PizzaLive.png" alt="">
-                        <img src="images/8th-street.png" alt="">
-                        <img src="images/PizzaNextDoor.png" alt="">
-                        <img src="images/BurgerLab.png" alt="">
-                        <img src="images/ChickenPoint.png" alt="">
-                        <img src="images/Dhoa.png" alt="">
-                        <img src="images/HungerGarage.png" alt="">
-                        <img src="images/HungryHeroes.png" alt="">
-                        <img src="images/Yatai.png" alt="">
-                        <img src="images/Nawabiana.png" alt="">
+                    <div class="logos-wrapper">
+                        <div class="scrolling-logos">
+                            <img src="images/purnima.png" alt="">
+                            <img src="images/Fiore.png" alt="">
+                            <img src="images/Fuoco.png" alt="">
+                            <img src="images/PizzaLive.png" alt="">
+                            <img src="images/8th-street.png" alt="">
+                            <img src="images/PizzaNextDoor.png" alt="">
+                            <img src="images/BurgerLab.png" alt="">
+                            <img src="images/ChickenPoint.png" alt="">
+                            <img src="images/Dhoa.png" alt="">
+                            <img src="images/HungerGarage.png" alt="">
+                            <img src="images/HungryHeroes.png" alt="">
+                            <img src="images/Yatai.png" alt="">
+                            <img src="images/Nawabiana.png" alt="">
+                            <!-- Duplicate images for infinite loop -->
+                            <img src="images/purnima.png" alt="">
+                            <img src="images/Fiore.png" alt="">
+                            <img src="images/Fuoco.png" alt="">
+                            <img src="images/PizzaLive.png" alt="">
+                            <img src="images/8th-street.png" alt="">
+                            <img src="images/PizzaNextDoor.png" alt="">
+                            <img src="images/BurgerLab.png" alt="">
+                            <img src="images/ChickenPoint.png" alt="">
+                            <img src="images/Dhoa.png" alt="">
+                            <img src="images/HungerGarage.png" alt="">
+                            <img src="images/HungryHeroes.png" alt="">
+                            <img src="images/Yatai.png" alt="">
+                            <img src="images/Nawabiana.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -268,6 +289,7 @@
                     <li><a href="https://quicklyservices.com/privacy-policy" target="_blank">Privacy Policy</a></li>
                     <li><a href="https://quicklyservices.com/public/term-conditions#refundPolicies" target="_blank">Refund Policy</a></li>
                     <li><a href="https://quicklyservices.com/public/about-us" target="_blank">About Us</a></li>
+                    <br>
                     <li><a href="https://support.quicklyservices.com/" target="_blank">Help & Support</a></li>
                     <li><a href="https://support.quicklyservices.com/article" target="_blank">Blog</a></li>
                     <li><a href="https://support.quicklyservices.com/login/rom" target="_blank">Create Ticket</a></li>
@@ -321,10 +343,9 @@
         </div>
      
         <div class="footer-right">
-            <p>Hal-Mars (4th Floor), 5 Shaheed Sangbadik Salina Parveen Sarak,</p>
-            <p>Moghbazar, Dhaka-1217, Bangladesh</p>
-            <p>Phone: +880 249362894, +880 1309989340</p>
-            <p>Email: info@quicklyservices.com</p>
+            <p class="first">Hal-Mars (4th Floor), 5 Shaheed Sangbadik Salina Parveen Sarak,</p>
+            <p class="first">Moghbazar, Dhaka-1217, Bangladesh</p>
+            <p class="third">+880 249362894, +880 1309989340, info@quicklyservices.com</p>
             
             <div class="social-icons">
                 <a href="https://www.facebook.com/quicklyofficial" class="fab fa-facebook"></a>
