@@ -57,11 +57,7 @@ nav ul li ul li:hover img {
     filter: brightness(1.2);
 }
 
-nav ul li ul li:hover a {
-    color: black;
-}
 
-/* Dropdown buttons */
 nav .dropdown-btn,
 nav .dropdown-1,
 nav .aa {
@@ -80,18 +76,20 @@ nav .dropdown-checkbox {
     display: none;
 }
 
-/* Dropdown menus */
 nav ul li ul {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
     background-color: white;
-    color: black;
     width: 180px;
     padding: 10px 0;
     height: auto;
     z-index: 1000;
+}
+
+nav ul li .dropdown-menu-1 {
+    width: 200px;
 }
 
 nav ul li ul li {
@@ -111,14 +109,17 @@ nav ul li ul li img {
 nav ul li ul li a {
     text-decoration: none;
     padding: 0;
-    color: rgb(105, 103, 103);
-    font-size: 14px;
-    line-height: 1.8;
+    color: rgb(105, 103, 103) !important;
+    font-size: 1rem;
+    line-height: 1.7;
     margin: 0;
     flex-grow: 1;
 }
 
-/* Arrow rotation */
+nav ul li ul li a:hover{
+    color: black !important;
+}
+
 nav .dropdown-btn:after {
     content: ' ⮟';
     transition: transform 0.3s ease;
@@ -126,10 +127,6 @@ nav .dropdown-btn:after {
 
 nav .dropdown-checkbox:checked + ul {
     display: block;
-}
-
-nav .dropdown-checkbox:checked + ul li a {
-    color: black;
 }
 
 nav .dropdown-checkbox:checked + ul ~ .dropdown-btn:after {
@@ -163,16 +160,6 @@ nav .dropdown-get-started ul li {
     font-size: 14px;
 }
 
-nav .dropdown-get-started ul li a {
-    text-decoration: none;
-    padding: 0;
-    color: rgb(63, 51, 51);
-    font-size: 14px;
-    line-height: 1.8;
-    margin: 0;
-    flex-grow: 1;
-}
-
 nav .dropdown-get-started .aa {
     background-color: white;
     color: #0a0a0a;
@@ -180,8 +167,18 @@ nav .dropdown-get-started .aa {
     padding: 8px 15px;
 }
 
+nav .dropdown-get-started ul li a {
+    text-decoration: none;
+    padding: 0;
+    color: rgb(105, 103, 103) !important;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 0;
+    flex-grow: 1;
+}
+
 nav .dropdown-get-started ul li a:hover {
-    color: black;
+    color: black !important;
 }
 nav .dropdown-get-started {
     margin-right: 80px;     
