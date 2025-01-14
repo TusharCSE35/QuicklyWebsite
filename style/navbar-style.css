@@ -42,7 +42,7 @@ nav ul li a {
     padding: 10px 10px;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -59,13 +59,14 @@ nav ul li ul li:hover img {
 
 
 nav .dropdown-btn,
-nav .dropdown-1,
+nav .dropdown-1, 
 nav .aa {
     color: white;
     padding: 10px 10px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 nav .dropdown-btn:hover{
@@ -157,7 +158,7 @@ nav .dropdown-get-started ul li {
     justify-content: flex-start;
     align-items: center;
     padding: 10px 15px;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 nav .dropdown-get-started .aa {
@@ -165,6 +166,7 @@ nav .dropdown-get-started .aa {
     color: #0a0a0a;
     border-radius: 5px;
     padding: 8px 15px;
+    font-size: 1rem;
 }
 
 nav .dropdown-get-started ul li a {
